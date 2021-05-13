@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #63079c;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 1.5rem 3rem;
+  background-color: #fafafa;
+}
+
+.container .title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .title small {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.container main {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: .63rem;
+  -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.container main .card-wrapper {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.container main .card {
+  background: #63079c;
+  background: -webkit-gradient(linear, left top, right top, color-stop(27%, #63079c), to(#77079c));
+  background: linear-gradient(90deg, #63079c 27%, #77079c 100%);
+  padding: 1.5rem;
+  border-radius: .3rem;
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-box-shadow: 0 10px 15px 5px rgba(99, 7, 156, 0.4);
+          box-shadow: 0 10px 15px 5px rgba(99, 7, 156, 0.4);
+  position: relative;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container main .card {
+  margin-bottom: 2rem;
+}
+
+.container main .card:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.container main .card * {
+  text-decoration: none;
+  color: white;
+}
+
+.container main .card .title {
+  font-size: 1.3rem;
+  margin: 0;
+  display: block;
+  text-align: left;
+  padding: 0;
+}
+
+.container main .card .version {
+  font-family: "Fira Code", monospace;
+  font-weight: 300;
+}
+
+.container main .card .btn_wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.33rem;
+}
+
+@media only screen and (min-width: 425px) {
+  .card .title {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card .title {
+    font-size: 2rem !important;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card-wrapper {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 3326px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container .title {
+    font-size: 5rem !important;
+  }
+  .card-wrapper {
+    -webkit-box-flex: 45%;
+        -ms-flex: 45%;
+            flex: 45%;
+    padding: 1rem;
+  }
+  .card-wrapper .card {
+    border-radius: 1rem !important;
+    padding: 1.5rem !important;
+    min-height: 500px !important;
+  }
+  .card-wrapper .card .title {
+    font-size: 5rem !important;
+  }
+  .card-wrapper .card .version {
+    font-size: 2rem !important;
+  }
+  .card-wrapper .card .btn_wrapper {
+    font-size: 2.5rem !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
